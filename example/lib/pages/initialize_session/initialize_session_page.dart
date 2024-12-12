@@ -30,7 +30,7 @@ import '../../reusable_components/default_text.dart';
 import '../../reusable_components/ok_dialog.dart';
 
 /// This basic example only shows how to initialize a Session and how to make a Payment Product call.
-/// A more extensive example - which shows the complete flow of how to create a payment - can be found at https://github.com/Online-Payments/sdk-client-flutter-example.
+/// A more extensive example - which shows the complete flow of how to create a payment - can be found at https://github.com/wl-online-payments-direct/sdk-client-flutter-example.
 class InitializeSessionPage extends ConsumerWidget {
   const InitializeSessionPage({super.key});
 

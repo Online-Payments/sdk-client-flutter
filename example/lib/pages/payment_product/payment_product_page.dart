@@ -26,7 +26,7 @@ import 'package:online_payments_sdk_example/reusable_components/vertical_scroll_
 import 'components/payment_product_field_info.dart';
 
 /// This basic example only shows how to initialize a Session and how to make a Payment Product call.
-/// A more extensive example - which shows the complete flow of how to create a payment - can be found at https://github.com/Online-Payments/sdk-client-flutter-example.
+/// A more extensive example - which shows the complete flow of how to create a payment - can be found at https://github.com/wl-online-payments-direct/sdk-client-flutter-example.
 class PaymentProductPage extends ConsumerWidget {
   const PaymentProductPage({super.key});
 
