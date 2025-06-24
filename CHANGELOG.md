@@ -1,31 +1,36 @@
+## 1.3.3
+### Changed:
+- Updated the Swift dependency to support setting masked values to the PaymentRequest.
+
+
 ## 1.3.2
-## Changed:
+### Changed:
 - Updated the Swift dependency to support iOS encryption update.
 
 
 ## 1.3.1
-## Added:
+### Added:
 - Added consumerProguardFiles 'proguard-rules.pro' to the library’s Gradle config, ensuring classes are
   preserved when minification is enabled.
 
 
 ## 1.3.0
-## Changed:
+### Changed:
 - Changed the `AccountOnFile.id` property to type `string`.
 
 
 ## 1.2.3
-## Changed:
+### Changed:
 - Updated the Swift dependency to support iOS 18.2.
 
 
 ## 1.2.2
-## Changed:
+### Changed:
 - Updated the Swift dependency. This fixes the compatibility issue with the latest Xcode.
 
 
 ## 1.2.1
-## Changed:
+### Changed:
 - Updated the `README`.
 - Updated the Swift dependency.
 
@@ -61,20 +66,20 @@
 
 
 ## 1.1.0
-## Added
+### Added
 - Return an error result when attempting to make a Surcharge API call without required arguments.
 - `Session` now supports the functionality to retrieve a Currency Conversion Quote. 
 
-## Changed
+### Changed
 - `PaymentProductFieldMasker`, `PaymentProductRequestMasker`, `AccountOnFileMasker`, `AccountOnFileCustomMaskedValueRequest`, `AccountOnFileMaskedValueRequest`, `PaymentProductFieldMaskRequest`, `PaymentRequestAllMaskedValuesRequest` and `PaymentRequestMaskedValueRequest`  have been made internal to the SDK. Use the masking functions on `AccountOnFile`, `PaymentProductField` and `PaymentRequest` instead.
 - `PaymentRequestValidator`, `PaymentProductFieldValidator`, `ValidationRuleValidator`, `PaymentProductFieldValidationRequest`, `PaymentRequestRuleValidationRequest`, `PaymentRequestValidationRequest` and `ValidationRuleValidationRequest` have been made internal to the SDK. Use the validation functions on `PaymentProductField`, `PaymentRequest` and `ValidationRule` instead.
 - Improved error handling when `Validator` cannot be decoded by the iOS bridge.
 - Dependencies have been updated.
 
-## Fixed
+### Fixed
 - Fixed an issue where an error occurred when using the SDK in combination with a `JAVA_HOME` version below 17 or an Android Studio Java version of below 17.
 
-## Deprecated
+### Deprecated
 - `stackTrace` in `NativeException` has been deprecated. Use `throwable` instead.
 - `link` in `PaymentProductFieldDisplayHints` has been deprecated, since this property is never returned from the API.
 - `PaymentProductFieldDisplayHints(bool, bool, int, String?, String, String?, String?, PreferredInputType?, Tooltip?, FormElement?)` constructor has been deprecated. This object should not be initialised, it is initialised automatically when returned from the API.
